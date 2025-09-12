@@ -1,0 +1,143 @@
+:root {
+  --orange: #fb8f2c;
+  --black: #111114;
+  --grey: #cfcfd0c4;
+}
+
+body {
+  background-color: var(--black);
+}
+
+header,
+footer,
+section {
+  padding: 0px 135px;
+}
+
+a {
+  list-style: none;
+  color: var(--grey);
+  text-decoration: none;
+}
+
+/* header */
+header .menu {
+  color: var(--grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+header .menu .menu-logo {
+  width: 53px;
+  height: 55px;
+  flex-shrink: 0;
+}
+
+header .menu .menu-iteams a {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+header .menu .menu-iteams {
+  display: flex;
+  gap: 34px;
+}
+
+header .menu .menu-infor span {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+header .menu .menu-infor span:nth-child(2) {
+  color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+  margin-left: 20px;
+}
+
+/* footer */
+footer {
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 77px;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+/* Danh sách link */
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 16px;
+}
+
+footer ul li a {
+  color: var(--grey);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* email highlight */
+footer .contact-info ul li:nth-child(2) a {
+  color: #fb8f2c;
+}
+
+.footer-col .logo img {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 121.6px;
+  height: 36px;
+}
+
+.footer-col > p {
+  color: var(--grey);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 18px;
+}
+
+.footer-col .footer-logo {
+  margin-bottom: 76px;
+}
+
+.footer-col .footer-logo svg {
+  height: 48px;
+}

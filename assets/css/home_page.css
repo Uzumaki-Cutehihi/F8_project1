@@ -1,0 +1,99 @@
+:root {
+  --orange: #fb8f2c;
+  --black: #111114;
+  --grey: #cfcfd0c4;
+}
+
+h2 {
+  font-family: "Libre Bodoni", serif;
+}
+
+/* header-content */
+header {
+  height: 573px;
+  flex-shrink: 0;
+  margin-bottom: 70px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-content p {
+  color: var(--grey);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  width: 532px;
+}
+
+.header-content h2 {
+  width: 670px;
+  color: white;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 74px; /* 115.625% */
+  text-transform: capitalize;
+}
+
+.header-content div:nth-child(2) {
+  position: relative;
+  width: 470px;
+  height: 436px;
+  flex-shrink: 0;
+}
+
+.header-content div:nth-child(2) div {
+  position: absolute;
+}
+
+.header-content div:nth-child(2) div:nth-child(1) {
+  z-index: 10;
+  bottom: 60px;
+  left: -20px;
+  color: white;
+  font-family: "Libre Bodoni";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 34px; /* 141.667% */
+  text-transform: capitalize;
+  text-align: right;
+  background-color: #fb8f2c;
+  padding: 12px 16px 8px 16px;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.header-content div:nth-child(2) div:nth-child(2) {
+  z-index: 0;
+}
+
+.header-content div:nth-child(2) div:nth-child(3) {
+  top: 62px;
+  left: 360px;
+}
+
+.header-content div:nth-child(2) div:nth-child(4) {
+  top: 180px;
+  left: 390px;
+}
+
+.header-content div:nth-child(2) div:nth-child(5) {
+  top: 295px;
+  left: 355px;
+}
+
+/* 2 */
+.hero-banner {
+  width: 1440px;
+  height: 194px;
+  flex-shrink: 0;
+  background-image: url("../img/home_page/background-1.png");
+  display: flex;
+  justify-content: space-between;
+}

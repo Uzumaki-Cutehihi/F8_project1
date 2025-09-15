@@ -221,3 +221,52 @@
 .related-items {
   margin-top: 100px;
 }
+
+@media screen and (max-width: 767px) {
+  .food-infor > .infor > h2 {
+    font-family: "Libre Bodoni";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px; /* 129.412% */
+    text-transform: capitalize;
+    max-width: 340px;
+  }
+
+  .food-infor > .infor > .P,
+  .food-describtion > .P {
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .food-infor,
+  .food-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    max-width: 450px;
+  }
+}
+
+/* Hieu ung */
+
+.food-list > div {
+  background-color: rgba(89, 85, 85, 0.161);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.food-list > div:hover {
+  background-color: rgba(149, 143, 143, 0.161);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}

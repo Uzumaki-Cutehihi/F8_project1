@@ -882,3 +882,301 @@ header {
   width: 40px;
   height: auto;
 }
+
+.res-menu {
+  display: none;
+}
+
+/* respónsive hehe */
+@media screen and (max-width: 767px) {
+  header {
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-content {
+    display: block;
+  }
+
+  .header-content h2 {
+    font-family: "Libre Bodoni";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    margin-bottom: 10px;
+    max-width: 340px;
+  }
+
+  /* 2 */
+  .hero-banner {
+    padding: 0;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /* 3 */
+  .most-food > .container > h2 {
+    font-family: "Libre Bodoni";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px; /* 129.412% */
+    text-transform: capitalize;
+    width: 400px;
+  }
+
+  .most-food > .container > p {
+    width: 380px;
+  }
+
+  .most-food .popular-food-list {
+    display: block;
+  }
+
+  .most-food .popular-food-list > div {
+    margin-bottom: 30px;
+  }
+
+  .most-food .popular-food-list .popular-food-description,
+  .most-food .container > p {
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  /* 4 */
+  .contact-and-time {
+    display: block;
+    margin-bottom: 300px;
+  }
+
+  .contact-and-time > div {
+    width: 100%;
+    height: 360px;
+  }
+
+  /* 5 */
+  .choose-and-taste h2 {
+    /* Mobile/H2 */
+    font-family: "Libre Bodoni";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px; /* 129.412% */
+    text-transform: capitalize;
+    max-width: 340px;
+  }
+
+  .choose-and-taste > p {
+    font-size: 14px;
+    max-width: 340px;
+  }
+
+  .type-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Khoảng cách giữa các item */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .type-list li {
+    flex: 0 0 auto;
+  }
+
+  .food-list-tbl {
+    display: block;
+  }
+
+  /* 6 */
+  .visit-restaurant > h2 {
+    text-align: center;
+    font-family: "Libre Bodoni";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px; /* 129.412% */
+    text-transform: capitalize;
+  }
+
+  .visit-restaurant > p {
+    display: none;
+  }
+
+  .visit-restaurant > .img-restaurant > div:nth-child(odd) {
+    display: none;
+  }
+
+  .visit-restaurant > .img-restaurant > div:nth-child(2) {
+    margin-top: 50px;
+  }
+
+  /* 7 */
+  .reverse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reverse > div:nth-child(1) {
+    display: block;
+    height: 350px;
+    /* chck lai */
+  }
+
+  /* 8 */
+  .daily-offers > h2 {
+    text-align: center;
+    font-family: "Libre Bodoni";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px; /* 129.412% */
+    text-transform: capitalize;
+  }
+
+  .daily-offers > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .daily-offers .food-list {
+    margin-top: 500px;
+    margin-bottom: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .daily-offers .food-list > div {
+    display: block;
+  }
+
+  .daily-offers .food-list > div > img {
+    width: 340px;
+  }
+
+  /* 10 */
+
+  .chef > h2,
+  .recent-articles > h2 {
+    text-align: center;
+    /* Mobile/H2 */
+    font-family: "Libre Bodoni";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px; /* 129.412% */
+    text-transform: capitalize;
+  }
+
+  .chef > p,
+  .recent-articles .describtion {
+    max-width: 340px;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+
+  .chef-img {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chef-img h4 {
+    text-align: center;
+    font-family: "Libre Bodoni";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+  }
+
+  /* 11 */
+  .recent-articles > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #content-2 {
+    flex-direction: column-reverse;
+  }
+
+  /* 12 */
+  .highlight-2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .highlight-2 > div {
+    text-align: center;
+    max-width: 340px;
+  }
+}
+
+/* Hieu ung */
+
+.header-content > div:nth-child(2) > div:nth-child(2) > img {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header-content > div:nth-child(1) > a:hover {
+  color: #fff;
+}
+
+.popular-food-option > a:hover {
+  color: #fb8f2c;
+}
+
+.popular-food-list > div {
+  background-color: rgba(89, 85, 85, 0.161);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chef-img > div {
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.popular-food-list > div:hover,
+.chef-img > div:hover {
+  background-color: rgba(149, 143, 143, 0.161);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}

@@ -171,3 +171,13 @@ footer .contact-info ul li:nth-child(2) a {
   line-height: 34px; /* 141.667% */
   text-transform: capitalize;
 }
+
+/* respónsive for header and footer */
+@media screen and (max-width: 767px) {
+  header .menu .menu-iteams {
+    display: none;
+  }
+  header > .res-menu {
+    display: block;
+  }
+}

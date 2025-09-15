@@ -224,3 +224,103 @@
   line-height: 26px;
   margin-top: 30px;
 }
+
+@media screen and (max-width: 767px) {
+  .invoice,
+  .cart-totals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cart-header,
+  .food-cell > img {
+    display: none;
+  }
+
+  .food-cell {
+    color: rgb(174, 117, 38);
+    font-family: "Plus Jakarta Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  .cart-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+
+  .food-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+  }
+
+  .price::before {
+    content: "Price: ";
+    font-weight: bold;
+    margin-right: 5px;
+    color: white;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  .qty::before {
+    content: "Quantity: ";
+    font-weight: bold;
+    margin-right: 5px;
+    color: white;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  .subtotal::before {
+    content: "Subtotal: ";
+    font-weight: bold;
+    margin-right: 5px;
+    color: white;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  .qty {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .qty input {
+    width: 40px;
+    text-align: center;
+  }
+
+  .cart-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cart-actions .coupon {
+    display: flex;
+    gap: 5px;
+  }
+
+  .cart-actions button {
+    width: 100%;
+  }
+}

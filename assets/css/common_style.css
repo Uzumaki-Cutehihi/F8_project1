@@ -141,3 +141,33 @@ footer .contact-info ul li:nth-child(2) a {
 .footer-col .footer-logo svg {
   height: 48px;
 }
+
+/* basic common style for all =)) */
+.P {
+  color: var(--grey);
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.H2 {
+  color: white;
+  font-family: "Libre Bodoni";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 74px; /* 115.625% */
+  text-transform: capitalize;
+}
+
+.T {
+  color: white;
+  font-family: "Libre Bodoni";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 141.667% */
+  text-transform: capitalize;
+}

@@ -18,6 +18,7 @@ header {
 .header-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -88,12 +89,796 @@ header {
   left: 355px;
 }
 
+.header-content a {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #fb8f2c;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+}
+
 /* 2 */
 .hero-banner {
-  width: 1440px;
   height: 194px;
   flex-shrink: 0;
   background-image: url("../img/home_page/background-1.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* Co giãn để phủ hết khung */
+  background-position: center;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 13%;
+  margin-bottom: 130px;
+}
+
+.hero-banner div {
+  display: flex;
+  gap: 19px;
+}
+
+.hero-banner h2 {
+  color: white;
+  font-family: "Libre Bodoni";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 74px; /* 115.625% */
+  text-transform: capitalize;
+}
+
+.hero-banner p {
+  width: 148px;
+  color: white;
+  font-family: "Libre Bodoni";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 34px; /* 141.667% */
+  text-transform: capitalize;
+}
+
+/* 3 */
+.most-food > .container {
+  padding: 48px 135px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  color: white;
+  align-items: center;
+}
+
+.most-food > .container > h2 {
+  text-align: center;
+  font-family: "Libre Bodoni";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 74px; /* 115.625% */
+  text-transform: capitalize;
+}
+
+.most-food > .container > p {
+  text-align: center;
+  width: 600px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  color: var(--grey);
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.popular-food-list {
+  display: flex;
+  gap: 30px;
+}
+
+.popular-food-list > div > p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--grey);
+  margin-bottom: 16px;
+}
+
+.popular-food-infor > p {
+  font-family: "Libre Bodoni";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 34px; /* 141.667% */
+  text-transform: capitalize;
+}
+
+.popular-food-infor {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.popular-food-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-food-option a {
+  color: white;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration: underline #fb8f2c;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+}
+
+#explore {
+  margin-top: 40px;
+  border-bottom: #fb8f2c 1px solid;
+}
+
+#explore a {
+  color: #fb8f2c;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/* 4 */
+.contact-and-time {
+  display: flex;
+  height: 360px;
+  margin-top: 50px;
+  padding: 54px 135px;
+}
+
+.find-us {
+  background-image: url("../img/home_page/background-2.png");
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.find-us > p {
+  font-family: "Libre Bodoni";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 34px; /* 141.667% */
+  text-transform: capitalize;
+}
+
+.find-us > div {
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 26px;
+}
+
+.openning-times {
+  background-color: #fb8f2c;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.openning-times p {
+  font-family: "Libre Bodoni";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 141.667% */
+  text-transform: capitalize;
+}
+
+.openning-times p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.openning-times table {
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.openning-times td {
+  padding: 6px 50px;
+}
+
+/* 5 */
+.choose-and-taste {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px 0px;
+  margin-top: 26px;
+}
+
+.choose-and-taste > h2 {
+  text-align: center;
+  /* H2 */
+  font-family: "Libre Bodoni";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 74px; /* 115.625% */
+  text-transform: capitalize;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.choose-and-taste p {
+  text-align: center;
+  color: var(--grey);
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  width: 600px;
+}
+
+.choose-and-taste ul {
+  color: white;
+  display: flex;
+  margin-top: 60px;
+  gap: 60px;
+}
+
+.choose-and-taste ul li {
+  font-family: "Libre Bodoni";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 40px;
+}
+
+.food-list-tbl {
+  width: 80%;
+  display: flex;
+  padding: 20px 0px;
+  margin: 10px 0px;
+  border-top: 1px solid rgba(255, 255, 255, 0.181);
+  justify-content: space-between;
+}
+
+.type-list {
+  margin-bottom: 25px;
+}
+
+.food-list-tbl .name,
+.food-list-tbl .price {
+  width: 300px;
+  color: white;
+  font-family: "Libre Bodoni";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 40px;
+}
+
+.food-list-tbl .infor {
+  display: flex;
+}
+
+.food-list-tbl tr {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 6 */
+.visit-restaurant {
+  padding: 60px 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.visit-restaurant h2 {
+  color: white;
+  font-family: "Libre Bodoni";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 74px; /* 115.625% */
+  text-transform: capitalize;
+}
+
+.visit-restaurant p {
+  color: var(--grey);
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 10px;
+}
+
+.visit-restaurant .img-restaurant {
+  display: flex;
+  gap: 30px;
+}
+
+.visit-restaurant .img-restaurant div {
+  max-width: 370px;
+  max-height: 600px;
+}
+
+.visit-restaurant .img-restaurant div:nth-child(2n + 1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 7 */
+.reverse {
+  padding: 40px 135px;
+  max-height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.reverse div:nth-child(1) {
+  width: 585px;
+  height: 394px;
+  background-color: #fb8f2c;
+  position: relative;
+}
+
+.reverse h3 {
+  font-family: "Libre Bodoni";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 125% */
+  text-transform: capitalize;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.reverse table {
+  font-family: "Libre Bodoni";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 141.667% */
+  text-transform: capitalize;
+  position: absolute;
+  top: 130px;
+  left: 40px;
+}
+
+.reverse table tr {
+  padding-bottom: 10px;
+}
+
+.reverse table th {
+  padding-right: 100px;
+}
+
+#flag1 {
+  font-size: 14px;
+}
+
+.reverse div > label {
+  background-color: #111114;
+  padding: 15px 117px;
+  position: absolute;
+  top: 300px;
+  left: 40px;
+}
+
+.reverse div:nth-child(2) {
+  position: relative;
+}
+
+.reverse div:nth-child(2) img:nth-child(2) {
+  position: absolute;
+  top: -60px;
+  right: -50px;
+}
+
+/* 8 */
+.daily-offers {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.daily-offers h2 {
+  color: #fff;
+
+  text-align: center;
+  /* H2 */
+  font-family: "Libre Bodoni";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 74px; /* 115.625% */
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+.daily-offers > div {
+  display: flex;
+  justify-content: center;
+}
+
+.daily-offers .highlight-content,
+.daily-offers .food-list {
+  width: 570px;
+  height: 434px;
+}
+
+.daily-offers .highlight-content {
+  background-image: url("../img/home_page/background-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 23px 30px;
+}
+
+.daily-offers .highlight-content .contain {
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  position: relative;
+}
+
+.daily-offers .highlight-content .contain .title {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px; /* 135.714% */
+  position: absolute;
+  top: 70px;
+  left: 40px;
+}
+
+.daily-offers .highlight-content .contain .sale i {
+  font-family: "Playball";
+  font-size: 84px;
+  font-style: initial;
+  font-weight: 500;
+  line-height: 82px; /* 97.619% */
+  letter-spacing: -5.04px;
+  text-transform: capitalize;
+  color: #fb8f2c;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+}
+
+.daily-offers .highlight-content .contain .sale span {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 138.462% */
+  position: absolute;
+  top: 180px;
+  left: 195px;
+}
+
+.daily-offers .highlight-content .contain .describtion {
+  width: 254px;
+  color: #fff;
+
+  /* 16 */
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  position: absolute;
+  top: 235px;
+  left: 40px;
+}
+
+.daily-offers .highlight-content .contain label {
+  display: inline-flex;
+  padding: 8px 30px;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #fb8f2c;
+  position: absolute;
+  left: 40px;
+  top: 350px;
+}
+
+.daily-offers .food-list {
+  padding-left: 30px;
+}
+
+.daily-offers .food-list > div {
+  display: flex;
+  margin-bottom: 55px;
+  gap: 30px;
+}
+
+.daily-offers .food-list .name-and-price {
+  color: white;
+  font-family: "Libre Bodoni";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 141.667% */
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+}
+
+.daily-offers .food-list .food-describtion {
+  color: var(--grey);
+  width: 325px;
+  margin-top: 25px;
+}
+
+/* 9 */
+.highlight-1 .contain {
+  padding: 0;
+  height: 135px;
+  background-color: #fb8f2c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.highlight-1 .contain div {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.highlight-1 .contain div img:nth-child(2) {
+  position: absolute;
+  left: 15px;
+}
+
+.highlight-1 .contain div p {
+  font-family: Butler;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+/* 10 */
+.chef {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chef h2 {
+  color: white;
+  font-family: "Libre Bodoni";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 74px; /* 115.625% */
+  text-transform: capitalize;
+}
+
+.chef > p {
+  color: var(--grey);
+  width: 780px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.chef-img {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  color: white;
+}
+
+.chef-img div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chef-img h4 {
+  font-family: "Libre Bodoni";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 30px;
+  margin-bottom: 3px;
+}
+
+.chef-img p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+/* 11 */
+.recent-articles {
+  margin-top: 95px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent-articles > p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  color: var(--grey);
+  margin-bottom: 20px;
+}
+
+.recent-articles > h2 {
+  color: #fff;
+
+  text-align: center;
+  /* H2 */
+  font-family: "Libre Bodoni";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 74px; /* 115.625% */
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+
+#content-1,
+#content-2 {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.recent-articles .time,
+.recent-articles .describtion {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--grey);
+  margin-bottom: 20px;
+  max-width: 550px;
+}
+
+.recent-articles h4 {
+  font-family: "Libre Bodoni";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 133.333% */
+  color: white;
+  width: 570px;
+}
+
+.recent-articles span {
+  text-align: right;
+  /* 16 */
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  color: white;
+  margin-right: 110px;
+}
+
+.recent-articles .btn {
+  padding-bottom: 3px;
+  width: 70px;
+  margin-top: 30px;
+  border-bottom: #fb8f2c 1px solid;
+}
+.recent-articles > a {
+  color: #fb8f2c;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.highlight-2 {
+  height: 240px;
+  background-image: url("../img/home_page/final-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.highlight-2 div,
+.highlight-2 form {
+  padding: 0px 100px;
+}
+
+.highlight-2 div h3 {
+  color: white;
+  font-family: "Libre Bodoni";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 125% */
+  text-transform: capitalize;
+}
+
+.highlight-2 p {
+  color: var(--grey);
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.email-form {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  width: 480px;
+}
+
+.email-form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+
+.email-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.email-form button img {
+  width: 40px;
+  height: auto;
 }

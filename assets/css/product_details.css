@@ -1,0 +1,223 @@
+/* Related new */
+.related-items {
+  margin-bottom: 150px;
+}
+
+.related-items .title {
+  font-family: "Libre Bodoni";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 34px; /* 141.667% */
+  text-transform: capitalize;
+  margin-left: 50px;
+}
+
+.related-items .food-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.related-items .food-list .describtion {
+  max-width: 370px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.168);
+  margin-bottom: 15px;
+}
+
+.related-items .food-list .order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.related-items .food-list .order a {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: white;
+  border-bottom: 1px solid #fb8f2c;
+}
+
+.related-items .food-list .order p {
+  font-family: "Libre Bodoni";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 141.667% */
+  text-transform: capitalize;
+}
+
+.title-name {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.food-infor {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.customer-count {
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  color: grey;
+  margin-left: 10px;
+}
+
+.food-infor .rating {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.food-infor .price {
+  font-family: "Libre Bodoni";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 141.667% */
+  text-transform: capitalize;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.sku,
+.category,
+.tag {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgb(168, 165, 165);
+  margin-bottom: 12px;
+}
+.sku > span,
+.category > span,
+.tag > span {
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.811);
+}
+
+/* add to cart btn */
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+  margin: 50px 0px;
+}
+
+.quantity {
+  display: flex;
+  border: 1px solid #666;
+}
+
+.quantity button {
+  background: #111;
+  color: #989494;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.quantity .number {
+  background: #111;
+  color: #fff;
+  padding: 8px 20px;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-to-cart-btn {
+  background: #f68c1f;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* food desciption */
+.food-describtion .title {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(121, 119, 119, 0.345);
+  display: flex;
+  gap: 40px;
+}
+
+.food-describtion .title .span {
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.food-describtion .title span:nth-child(2) {
+  text-decoration: underline #fb8f2c 1px;
+  text-underline-offset: 22px;
+  color: #aaa5a5;
+}
+
+/* review */
+.review-box {
+  border: 1px dashed #2e86c1; /* viền giống trong ảnh */
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.review-header {
+  display: flex;
+  gap: 15px;
+}
+
+.review-box .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.review-info h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.review-info span {
+  font-weight: normal;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.review-info p {
+  margin: 8px 0;
+}
+
+.review-info .stars {
+  color: gold;
+  font-size: 18px;
+}
+
+.related-items {
+  margin-top: 100px;
+}

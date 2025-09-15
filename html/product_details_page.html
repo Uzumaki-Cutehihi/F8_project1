@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/product_details.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/common_style.css">
 </head>
@@ -29,32 +38,47 @@
             </div>
         </div>
     </header>
+
     <!-- food information -->
     <section class="food-infor">
         <div class="img">
             <img src="../assets/img/product_details/food0.png" alt="food">
         </div>
         <div class="infor">
-            <h2>Crispy chicken breasts</h2>
+            <h2 class="H2">Crispy chicken breasts</h2>
             <div class="rating">
-                <!-- stars -->
+                <span class="star">
+                    <img src="../assets/img/product_details/star.png" alt="star">
+                    <img src="../assets/img/product_details/star.png" alt="star">
+                    <img src="../assets/img/product_details/star.png" alt="star">
+                    <img src="../assets/img/product_details/star.png" alt="star">
+                    <img src="../assets/img/product_details/star.png" alt="star">
+                </span>
+                <span class="customer-count">
+                    ( 1 customer review )
+                </span>
             </div>
             <p class="price">
                 $ 54.00
             </p>
-            <p class="description">
+            <p class="description P" style="max-width: 570px;">
                 Aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
                 suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur uis autem vel eum iure reprehenderit.
             </p>
-            <p class="add-to-card">
-                <!-- btn -->
-            </p>
+            <div class="add-to-cart">
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <span class="number">1</span>
+                    <button class="plus">+</button>
+                </div>
+                <button class="add-to-cart-btn">ADD TO CART</button>
+            </div>
             <p class="sku">
                 <!-- Có thể thay bằng in đậm cho span -->
                 <span>SKU</span> : PT322
             </p>
             <p class="category">
-                <span>CATEGORY</span> Lunch
+                <span>CATEGORY</span>: Lunch
             </p>
             <p class="tag">
                 <span>TAGS</span> :Sweets.Ghevar
@@ -67,8 +91,7 @@
             <span>Description</span>
             <span>Reviews(1)</span>
         </div>
-        <hr>
-        <p>
+        <p class="P">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
             Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
             ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
@@ -76,7 +99,7 @@
             justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
         </p>
         <br>
-        <p>
+        <p class="P">
             Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor
             eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
         </p>
@@ -87,13 +110,12 @@
         <div class="food-list">
             <div>
                 <img src="../assets/img/product_details/food1.png" alt="food">
-                <p class="title name">
+                <p class="title-name T">
                     Crispy chicken breasts
                 </p>
-                <p class="describtion">
+                <p class="describtion P">
                     Fresh toasted sourdough bread with olive oil and pomegranate.
                 </p>
-                <hr>
                 <div class="order">
                     <a href="#">Order Now</a>
                     <p>$54</p>
@@ -101,13 +123,12 @@
             </div>
             <div>
                 <img src="../assets/img/product_details/food2.png" alt="food">
-                <p class="title name">
+                <p class="title-name T">
                     New Lubina Marinada
                 </p>
-                <p class="describtion">
+                <p class="describtion P">
                     Fresh toasted sourdough bread with olive oil and pomegranate.
                 </p>
-                <hr>
                 <div class="order">
                     <a href="#">Order Now</a>
                     <p>$54</p>
@@ -115,13 +136,12 @@
             </div>
             <div>
                 <img src="../assets/img/product_details/food3.png" alt="food">
-                <p class="title name">
+                <p class="title-name T">
                     Crispy chicken breasts
                 </p>
-                <p class="describtion">
+                <p class="describtion P">
                     Fresh toasted sourdough bread with olive oil and pomegranate.
                 </p>
-                <hr>
                 <div class="order">
                     <a href="#">Order Now</a>
                     <p>$54</p>

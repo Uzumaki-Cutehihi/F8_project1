@@ -1,0 +1,226 @@
+/* Tổng thể */
+.invoice {
+  background-color: #1b1b1b;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* Cart container */
+.invoice {
+  margin: 100px 135px;
+}
+
+.del {
+  font-size: 10px;
+}
+
+.cart-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 12px 20px;
+  border-bottom: 1px solid #333;
+  font-weight: bold;
+  text-align: left;
+  color: #ccc;
+}
+
+/* Cart rows */
+.cart-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 35px 20px;
+  border-bottom: 1px solid #333;
+}
+
+.food-cell {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+}
+
+.food-cell img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.price,
+.subtotal {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  border: 1px solid #555;
+  width: fit-content;
+}
+
+.qty button {
+  background: none;
+  border: none;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.qty input {
+  width: 40px;
+  text-align: center;
+  border-left: 1px solid #555;
+  border-right: 1px solid #555;
+  background: transparent;
+  color: #fff;
+  border-bottom: none;
+  border-top: none;
+  font-size: 14px;
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+.coupon {
+  display: flex;
+  gap: 10px;
+}
+
+.coupon input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #333;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.coupon .btn {
+  background: #f7931a;
+  color: #fff;
+}
+
+.cart-actions .btn:last-child {
+  background: #d87c2d;
+  color: #fff;
+}
+
+/* cart total */
+.cart-totals {
+  display: flex;
+  justify-content: end;
+}
+
+.cart-total {
+  width: 570px;
+  height: 680px;
+}
+
+.cart-total h4 {
+  color: white;
+  font-family: "Libre Bodoni";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.cart-total table {
+  background: #1b1b1b;
+  color: #fff;
+  width: 100%;
+  padding: 5px 10px;
+  border-collapse: separate;
+  border-spacing: 40px 10px;
+}
+
+.cart-total table tr {
+  border-bottom: 1px solid #333;
+}
+
+.cart-total table td {
+  padding: 12px 0;
+  vertical-align: top;
+}
+
+.cart-total .label {
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.cart-total .value {
+  text-align: left;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.cart-total p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.cart-total select,
+.cart-total input[type="text"] {
+  width: 300px;
+  background: transparent;
+  border: 1px solid #444;
+  padding: 10px;
+  margin-top: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.cart-total input::placeholder {
+  color: #aaa;
+}
+
+.cart-total > table button {
+  background: #fff;
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.cart-total button:hover {
+  background: #ddd;
+}
+
+.btn-checkout {
+  width: 100%;
+  background-color: #d87c2d;
+  height: 45px;
+  color: white;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  margin-top: 30px;
+}
